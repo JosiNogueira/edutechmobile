@@ -1,0 +1,58 @@
+Para melhor organização, criaremos uma pasta chamada logica, onde inseriremos todos os arquivos que vamos construir ao longo do treinamento.
+
+Abriremos o editor de texto, que é o Sublime, e tem um arquivo em branco. 
+
+Como padrão, temos o atalho "Ctrl + S" que serve para salvarmos o arquivo que será o programa.
+
+Clicaremos na pasta logica e salvaremos o novo arquivo como primeiro_teste.html. 
+
+Tendo o arquivo, é importante a inserção do .html, por esta ser a linguagem que o navegador entende e, ao utilizarmos a extensão, estamos orientando-o sobre qual deve ser a interpretação do arquivo por parte do navegador e do sistema operacional.
+
+
+O Chrome, a partir da versão 55, passou a detectar automaticamente o encoding dos arquivos. Então, é possível pensar que não é mais necessária a tag <meta charset="UTF-8">. 
+No entanto, ela deve continuar a ser usada, porque nem todos os navegadores detectam o encoding automaticamente, sendo assim, é uma boa prática manter a tag <meta> indicando o charset usado na hora de criar o arquivo.
+
+<meta charset="UTF-8">
+
+Em nosso primeiro teste, no Sublime, digitaremos:
+
+Meu primeiro teste!
+Seria isso um programa?
+
+Retornaremos ao navegador, no caso o Google Chrome. Solicitaremos que ele abra o nosso arquivo. Selecionaremos, na barra de menu superior, "Arquivo > Abrir arquivo...", ou com a tecla de atalho "CTRL + O" e no diretório selecionaremos o arquivo que acabamos de criar.
+
+Simplesmente pressionando-se a tecla "Enter" com o cursor sobre o endereço, o navegador nunca mostrará as linhas puladas. 
+Precisamos utilizar um comando especial, que o HTML tenha preparado, para pular linhas, no caso o <br>:
+Trata-se de uma tag HTML, e todas têm esta característica de começar com o símbolo de "menor" (<), o nome da tag - "br" é abreviação de break -, e fecha com o símbolo de "maior" (>). Isto indica ao navegador que ele deve pular uma linha.
+
+<br>
+
+Meu primeiro teste!
+<br>
+Seria isso um programa?
+
+Após salvarmos "Ctrl + S", retornaremos ao navegador, e recarregaremos "Ctrl + R" a página.
+
+O HTML conta com a tag <h1>. O "h" se origina da palavra heading, ou seja, cabeçalho. 
+Significa que este é o primeiro título, ou título principal é algo que precisa ser destacado em uma página.
+Uma particularidade da tag <br> é que, no início, inserimos <> e pronto - já para a tag <h1> e a maioria das tags HTML, precisaremos da mesma tag com uma barra </h1> para fechá-la. Isso indica que ela começou antes de "Meu" e terminou após "teste!". Ou seja, tudo que está entre <h1> e </h1> está marcado pela tag <h1>, conforme vemos abaixo:
+
+<h1>Meu primeiro teste!</h1>
+
+
+Utilizaremos uma tag chamada âncora, representada pela letra "a". O conteúdo dela será a palavra "aqui":
+
+Seria isso um programa? Descubra visitando a Alura <a>aqui</a>!
+
+Utilizamos uma tag HTML de âncora para criar links na web.
+
+Por meio do atributo href, indicaremos o endereço web da Alura:
+
+<a href="http://www.alura.com.br">aqui</a>
+
+
+<script>
+
+    alert("Isso sim é um programa");
+
+</script>
